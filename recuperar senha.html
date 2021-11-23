@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo Login.css"/>
+    <title>Asian Print Shop</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/logo.jpeg" width="160" height="130"></a>
+        <ul>
+            <li><a href="Tela de Login.html">ENTRAR/CADASTRAR</a></li>
+            <li><a href="sobre nós.html">SOBRE NÓS</a></li>
+            <li><a href="catalogo.html">CATALOGO</a></li>
+        </ul>
+    </nav>
+    <hr size="4" color="orange">
+    <div class="form">
+    <form class="formulario" method="post"> 
+        <p> Recupere sua senha agora mesmo!</p>
+        
+        <div class="field">
+            <label for="nome">Seu E-mail:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu E-mail*" required>
+        </div>
+
+        <div class="field">
+            <label for="email"> Ultima senha usada:</label>
+            <input type="email" id="email" name="email" placeholder="Digite sua senha mais recente*" required>
+        </div>   
+
+        <div class="field">
+            <label for="nome">Digite sua nova senha:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite a senha*" required>
+        </div>     
+
+        <div class="field">
+            <label for="nome">Confirme a senha:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite a senha*" required>
+        </div>  
+        <input type="submit" name="acao" value="Recuperar"onclick="msg()">
+
+    </form>
+</div>
+    <script>
+    function msg() {
+      alert("Acesse seu e-mail e confirme a troca de senha, lá voce recebera um link para acessar sua conta diretamnete");
+    }
+    </script>
+    <footer>
+        <a href="index.html">ASIAN PRINT SHOP</a>
+        <a href="https://www.instagram.com/"><img src="img/insta.png"></a>
+        <a href="https://twitter.com/"><img src="img/tt.png"></a>
+        <ul>
+            <li><a href="sobre nós.html">SOBRE NÓS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Asian Print Shop</title>
+    <style>
+        * {
+            padding: 0;
+
+        }
+
+
+        nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+  
+  nav ul, footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0%;
+    width: 70%;
+  }
+  
+  nav ul li, footer ul li{
+    text-align: center;
+    width: 100%;
+  }
+  
+  nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: underline;
+    color: black;
+  }
+
+
+  
+  
+  .produto-single p {
+            text-align:  center;
+            font-size: 20px;
+            font-family: sans-serif;
+            background-color: orange;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: white;
+            margin: 10px;
+            width: 200px;
+            height: 35px;
+
+        }
+
+        .produto-single a {
+            text-align: center;
+            background-color: white;
+            border:solid 1px orange;
+            color: orange;
+            margin: 10px;
+            display: block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+            width: 200px;
+
+        }
+
+
+
+        .info-single {
+            font-size: 25px;
+            font-family: arial;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            min-width: 200px;
+            max-height: 150px;
+            min-height: 150px;
+            align-items: center;
+            margin: 10px;
+        }
+
+        
+  
+        h4 {
+            text-align: center;
+            font-size: 30px;
+            font-family: handlee, cursive;
+            color: white;
+            background-color:red;
+            margin:10px;
+            border-radius: 40px;
+            height: 80px;
+            border: solid 3px black;
+
+        }
+        #produtos
+         {
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .kk {
+            left: 0px; top: 1470px;
+            width: 100%; 
+            background-color: white;
+            height: 150px;
+            margin:10px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="img/logo.jpeg" width="160" height="100"></a>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="Tela de Login.html">ENTRAR/CADASTRAR</a></li>
+            <li><a href="sobre nós.html">SOBRE NÓS</a></li>
+            <li><a href ="#link carrinho">CARRINHO</a></li>
+        </ul>
+        </div>
+    </nav>
+    <hr size="4" color="orange">
+    <section id="produtos1">
+
+        <div id="container">
+                <div id="produtos">
+                </div>
+                <h4><a name="link carrinho"></a>CARRINHO</h4>
+                <div id="carrinho">
+
+                </div>
+
+                <button style="position: absolute; left: 800px;
+                text-align: center;
+                font-size: 23px;
+                font-family: handlee, cursive;
+                color: white;
+                background-color:red;
+                margin:10px 100px 20px 100px;
+                border-radius: 50px;
+                width: 300px;
+                border:solid 2px black;
+                 "type="button" onclick=" localStorage.clear(); location.reload();">
+                  Limpar carrinho </button>
+    
+    <button style="position: static; left: 450px; top: 1270px;
+    text-align: center;
+    font-size: 23px;
+    font-family: handlee, cursive;
+    color: white;
+    background-color:red;
+    margin:10px 100px 20px 100px;
+    border-radius: 50px;
+    width: 300px;
+    border:solid 2px black;
+     "type="button"><a href="dados.html"style="text-decoration:none">
+    <font color="white">Ir para o pagamento </font></a> </button>
+            </div>
+        </div>
+        <script>
+            const items = [
+                {
+                    id: 0,
+                    img: 'img/visita.jpg',
+                    nome: 'Cartão de Visita<br>R$0,69',
+                    quantidade: 0
+                },
+            
+                {
+                    id: 1,
+                    img: 'img/flyer.png',
+                    nome: ' Flyers<br> R$5,99',
+                    quantidade: 0
+                },
+                {
+                    id: 2,
+                    img: 'img/banner.jpeg',
+                    nome: ' Banners<br> R$14,99',
+                    quantidade: 0
+                },
+                {
+                    id: 3,
+                    img: 'img/ima.jpeg',
+                    nome: 'Imã de Geladeira<br> R$9,99',
+                    quantidade: 0
+                },
+    
+                {
+                    id: 4,
+                    img: 'img/cartaz.png',
+                    nome: 'Cartazes<br> R$4,50',
+                    quantidade: 0
+                },
+                {
+                    id: 5,
+                    img: 'img/convite.jpeg',
+                    nome: 'Convites<br> R$5,99',
+                    quantidade: 0
+                },
+                {
+                    id: 6,
+                    img: 'img/carimbo.jpeg',
+                    nome: ' Carimbos<br> R$8,99',
+                    quantidade: 0
+                },
+                {
+                    id: 7,
+                    img: 'img/etiquetas.jpeg',
+                    nome: 'Etiquetas<br> R$1,99',
+                    quantidade: 0
+                },
+                {
+                    id: 8,
+                    img: 'img/autocolantes.jpeg',
+                    nome: 'Auto-Colantes<br> R$3,99',
+                    quantidade: 0
+                },
+                {
+                    id: 9,
+                    img: 'img/bloco.jpeg',
+                    nome: 'Blocos e Cadernos<br> R$21,99',
+                    quantidade: 0
+                },
+                {
+                    id: 10,
+                    img: 'img/timbrado.png',
+                    nome: 'Papel Timbrado<br> R$2,99',
+                    quantidade: 0
+                },
+                {
+                    id: 11,
+                    img: 'img/display.jpeg',
+                    nome: 'Display de Mesa<br> R$30,99',
+                    quantidade: 0
+                },
+
+            ]
+    
+            inicializarloja = () => {
+                var containerProdutos = document.getElementById('produtos');
+                items.map((val) => {
+                    containerProdutos.innerHTML += `
+        
+        <div class="produto-single">
+            <img src="`+ val.img + `" />
+          <p>`+ val.nome + `</p>
+          <a key="`+ val.id + `" href="#">Adicionar ao carrinho!</a>
+            </div>  
+              `;
+    
+                })
+            }
+    
+            inicializarloja();
+    
+            atualizarCarrinho = () => {
+                console.log(items);
+                var containerCarrinho = document.getElementById('carrinho');
+                containerCarrinho.innerHTML = "";
+                items.map((val) => {
+                    if (val.quantidade > 0) {
+                        containerCarrinho.innerHTML += `
+        <div class="info-single">
+       <p style="float:left;">Produto:  `+ val.nome + `</p>
+       <p style="float:right;">Quantidade:  `+ val.quantidade + `</p>
+       <div style="clear:both"></div>
+       <hr> 
+       </div>
+              `;
+                    }
+                })
+            }
+    
+    
+    
+            var links = document.getElementsByTagName('a');
+    
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", function () {
+                    let key = this.getAttribute('key');
+                    items[key].quantidade++;
+                    atualizarCarrinho();
+                    return false;
+                })
+            }
+        </script>
